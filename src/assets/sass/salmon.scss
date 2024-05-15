@@ -46,3 +46,389 @@
         }
     }
 }
+
+/*-- -------------------------- -->
+<---      overview-section      -->
+<--- -------------------------- -*/
+
+#overview-section{
+
+    .os-container{
+        width: 90%;
+        margin: 5rem auto;
+
+        .overview-section{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 4rem 0;
+
+            .overview-section-left{
+                width: 50%;
+
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .overview-section-right{
+                width: 50%;
+
+                .os-list{
+                    padding-left: 30px;
+                    list-style-type: disc;
+            
+                    li{
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+            
+                    li::marker {
+                        color: var(--primary);
+                        font-size: 1.75em;
+                    }
+                }
+
+                .text-sm-highlight{
+                    color: var(--primary);
+                    font-weight: 600;
+                    font-size: 1.3rem;
+                }
+            
+                .os-text{
+                    font-size: 18px;
+                    line-height: 2rem;
+                }
+            }
+        }
+    }
+}
+
+
+/*-- -------------------------- -->
+<---      salmon-CTA-section    -->
+<--- -------------------------- -*/
+
+#cta-section{
+    .os-container{
+        width: 90%;
+        margin: 10rem auto;
+
+        .cta-wrapper{
+            background: var(--secondary);
+            border-radius: 25px;
+            height: 350px;
+
+            .cta-section{
+                padding: 30px 30px 25px 60px;
+                background: url("/assets/images/salmon-cta-bg.png");
+                background-repeat: no-repeat;
+                border-radius: 25px;
+                background-size: cover;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                justify-content: center;
+                align-items: start;
+
+                .cta-hero-title {
+                    margin-bottom: 16px;
+                    font-family: 'Made Soulmaze', 'Trebuchet MS', sans-serif;
+                    font-weight: 400;
+                    font-size: clamp(40px, 6vw, 40px);
+                    color: #fff;
+                    text-transform: uppercase;
+                }
+                .cta-text {
+                    color: var(--bodyTextColorWhite);
+                    font-weight: 400;
+                    font-size: clamp(16px, 1.8vw, 18px);
+                    margin-bottom: 16px;
+                    line-height: 30px;
+                    width: 50%;
+                }
+
+                .button-solid-sm {
+                    color: #ffffff;
+                    background-color: var(--primary);
+                    border-color: var(--primarydark);
+                    border-width: 0px 0px 5px 0px;
+                    border-radius: 54px;
+                    padding: 14px 30px 14px 30px;
+                    border-style: solid;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 18px;
+                    font-weight: 500;
+                    transition: all 0.3s;
+                
+                    &:hover {
+                        background-color: var(--secondary);
+                        border-color: #19031f;
+                        color: #fff;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+
+/*-- -------------------------- -->
+<---      Media Queries         -->
+<--- -------------------------- -*/
+
+
+/* 
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    #overview-section{
+
+        .os-container{
+            width: 90%;
+            margin: 0 auto;
+
+            .overview-section{
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                align-items: center;
+                gap: 40px;
+
+                .overview-section-left{
+                    width: 100%;
+                }
+                .overview-section-right{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    #cta-section{
+        .os-container{
+            width: 90%;
+            margin: 5rem auto;
+
+            .cta-wrapper{
+                height: 350px;
+
+                .cta-section{
+                    padding: 30px 30px 25px 60px;
+                    background: url("/assets/images/salmon-cta-bg.png");
+                    background-repeat: no-repeat;
+                    border-radius: 25px;
+                    background-size: cover;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    justify-content: center;
+                    align-items: start;
+
+                    .cta-text {
+                        width: 80%;
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    #overview-section{
+
+        .os-container{
+            width: 90%;
+            margin: 0 auto;
+
+            .overview-section{
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                align-items: center;
+                gap: 40px;
+
+                .overview-section-left{
+                    width: 100%;
+                }
+                .overview-section-right{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
+     #cta-section{
+        .os-container{
+            width: 90%;
+            margin: 5rem auto;
+
+            .cta-wrapper{
+                height: 350px;
+
+                .cta-section{
+                    padding: 30px 30px 25px 60px;
+                    background: url("/assets/images/salmon-cta-bg.png");
+                    background-repeat: no-repeat;
+                    border-radius: 25px;
+                    background-size: cover;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    justify-content: center;
+                    align-items: start;
+
+                    .cta-text {
+                        width: 80%;
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    #overview-section{
+
+        .os-container{
+            width: 90%;
+            margin: 0 auto;
+
+            .overview-section{
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                align-items: center;
+                gap: 40px;
+
+                .overview-section-left{
+                    width: 100%;
+                }
+                .overview-section-right{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
+    #cta-section{
+        .os-container{
+            width: 90%;
+            margin: 2rem auto;
+
+            .cta-wrapper{
+                height: 370px;
+
+                .cta-section{
+                    padding: 30px;
+                    background: url("/assets/images/salmon-cta-bg.png");
+                    background-repeat: no-repeat;
+                    border-radius: 25px;
+                    background-size: cover;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    justify-content: center;
+                    align-items: start;
+
+                    .cta-text {
+                        width: 90%;
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    #overview-section{
+
+        .os-container{
+            width: 90%;
+            margin: 0 auto;
+
+            .overview-section{
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                align-items: center;
+                gap: 40px;
+
+                .overview-section-left{
+                    width: 100%;
+                }
+                .overview-section-right{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
+    #cta-section{
+        .os-container{
+            width: 90%;
+            margin: 2rem auto;
+
+            .cta-wrapper{
+                height: 430px;
+
+                .cta-section{
+                    padding: 30px;
+                    background: url("/assets/images/salmon-cta-bg.png");
+                    background-repeat: no-repeat;
+                    border-radius: 25px;
+                    background-size: cover;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    justify-content: center;
+                    align-items: start;
+
+                    .cta-text {
+                        width: 100%;
+                    }
+                }
+
+            }
+        }
+    }
+
+}

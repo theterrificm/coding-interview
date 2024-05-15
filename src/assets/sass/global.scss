@@ -14,6 +14,7 @@
     --primarylight: #92C79D;
     --primarydark: #035e2d;
 	--bodyTextColorWhite: #EBEBEB ;
+	--cardBackgroundColor: #f1f1f1 ;
 	--sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) clamp(1rem, 1.5vw, 2rem);
 }
 
@@ -282,6 +283,201 @@ a {
         text-align: center;
     }
 }
+
+
+/*-- -------------------------- -->
+<---      price-section         -->
+<--- -------------------------- -*/
+
+
+#price-section{
+    .ps-container{
+        width: 85%;
+        margin: 10rem auto;
+    }
+}
+
+.ps-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.price-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background: var(--cardBackgroundColor);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.price-card{
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    justify-content: center;
+    width: 320px;
+    height: 260px;
+}
+
+.price-card.bg-dark{
+    background: var(--secondary);
+
+}
+
+.package-limit{
+    color: #145FA4;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.package-limit.text-white{
+    color: #fff;
+}
+
+.discount-wrapper{
+    display: flex;
+    gap: 5px;
+    justify-content: start;
+    align-items: end;
+}
+.price-title{
+    font-family: 'Made Soulmaze', 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: clamp(32px, 4vw, 42px);
+    color: var(--primary);
+    text-transform: uppercase;
+}
+.price-title.text-secondary{
+    color: var(--secondary);
+}
+.price-title.text-white{
+    color: #fff;
+}
+.price-card-text{
+    color: #353535;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.price-card-text.text-white{
+    color: #a5a5a5;
+}
+
+
+
+
+/*-- -------------------------- ------>
+<--- Media Queries (Price Section)  -->
+<--- -------------------------- ------*/
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    #price-section{
+        .ps-container{
+            width: 85%;
+            margin: 5rem auto;
+        }
+    }
+    .price-wrapper{
+        flex-wrap: wrap;
+    }
+
+    .price-card{
+        width: 100%;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+    #price-section{
+        .ps-container{
+            width: 85%;
+            margin: 5rem auto;
+        }
+    }
+    .price-wrapper{
+        flex-wrap: wrap;
+    }
+
+    .price-card{
+        width: 100%;
+    }
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    #price-section{
+        .ps-container{
+            width: 85%;
+            margin: 5rem auto;
+        }
+    }
+    .price-wrapper{
+        flex-wrap: wrap;
+    }
+
+    .price-card{
+        width: 100%;
+    }
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    #price-section{
+        .ps-container{
+            width: 85%;
+            margin: 5rem auto;
+        }
+    }
+    .price-wrapper{
+        flex-wrap: wrap;
+    }
+
+    .price-card{
+        width: 100%;
+    }
+
+    .discount-wrapper{
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+  
+}
+
+
+
 
 @media screen and (min-width: 600px) {
 
